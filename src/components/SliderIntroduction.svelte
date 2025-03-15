@@ -42,15 +42,15 @@
 <section class="md:flex h-fit">
 	<div
 		bind:this={firstBlock}
-		class="h-fit bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover p-[8.66%] flex flex-col items-center justify-center gap-y-[48px] md:w-1/2 md:mt-[-60px] z-1 md:items-start"
+		class="h-fit bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover p-[8.66%] flex flex-col items-center justify-center gap-y-12 md:w-1/2 md:-mt-15 z-1 md:items-start"
 	>
 		<h2
-			class="font-[cormorant_garamond] text-center text-white text-4xl font-semibold md:text-start md:pl-3 md:pr-15 leading-[49px] lg:text-[48px] lg:leading-[58px]"
+			class="font-[cormorant_garamond] text-center text-white text-4xl font-semibold md:text-start md:pl-3 md:pr-15 leading-12 lg:text-5xl lg:leading-15"
 		>
 			True & memorable taste made with love and tradition
 		</h2>
 		<p
-			class="font-[poppins] text-sm text-center text-white text-[13px] font-light md:text-start md:pl-3 md:pr-15 leading-[27px] xl:text-base"
+			class="font-[poppins] text-sm text-center text-white font-light md:text-start md:pl-3 md:pr-15 leading-7 xl:text-base"
 		>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore e t enim ad minim veniam, quis nostrud
@@ -66,7 +66,7 @@
 	</div>
 	<div
 		bind:this={secondBlock}
-		class="relative w-full h-fit overflow-hidden md:w-1/2 md:h-full"
+		class="relative w-full overflow-hidden md:w-1/2 md:h-full"
 	>
 		{#each slides as slide, i}
 			<div

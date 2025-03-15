@@ -1,9 +1,9 @@
-<section id="Story" class="mt-[90px]">
+<section id="Story" class="mt-23">
 	<div
-		class="h-[951px] flex justify-center items-center bg-[url(../images/rest6-toscania.jpg)] bg-no-repeat bg-cover bg-center md:bg-fixed"
+		class="h-238 flex justify-center items-center bg-[url(../images/rest6-toscania.jpg)] bg-no-repeat bg-cover bg-center xl:bg-fixed"
 	>
 		<h2
-			class="font-[cormorant_garamond] text-center text-white text-5xl font-light md:text-[30.72px] xl:text-[49.6px]"
+			class="font-[cormorant_garamond] text-center text-white text-5xl font-light md:text-8 xl:text-12.5"
 		>
 			Our every meal has<br />its own unique story we want<br />to share with
 			you
@@ -11,20 +11,20 @@
 	</div>
 	<div class="md:flex md:gap-x-[5.6%]">
 		<div
-			class="h-[1175.5px] bg-[url(../images/rest6-spices.jpg)] bg-no-repeat bg-cover bg-center z-1 md:w-[20%] md:h-[235px] md:mt-[-100px]"
+			class="h-294 bg-[url(../images/rest6-spices.jpg)] bg-no-repeat bg-cover bg-center z-1 md:w-[20%] md:h-59 md:-mt-25"
 			style="padding-bottom: 29.2%"
 		></div>
-		<div class="mt-25 mb-[95px] md:w-[34.375%] md:pr-[1.6%]">
+		<div class="mt-25 mb-24 md:w-[34.375%] md:pr-[1.6%]">
 			<h2
-				class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold leading-[49px] md:text-start md:mb-10 xl:text-[48px]"
+				class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold leading-12 md:text-start md:mb-10 xl:text-5xl"
 			>
 				Tuscany's tradition<br />on your plat
 			</h2>
 			<div
-				class="mt-4 flex flex-col gap-y-[15px] mx-auto w-[84.02%] md:mx-0 xl:w-fit"
+				class="mt-4 flex flex-col gap-y-4 mx-auto w-[84.02%] md:mx-0 xl:w-fit"
 			>
 				<p
-					class="font-[poppins] text-[#5e5e5e] font-light text-[13px] text-center leading-8 md:text-start xl:text-base"
+					class="font-[poppins] text-[#5e5e5e] font-light text-sm text-center leading-8 md:text-start xl:text-base"
 				>
 					<span class="font-bold"
 						>Praesent nec magna ac pede. Mauris suscipit mauris.</span
@@ -37,7 +37,7 @@
 					velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
 				<p
-					class="font-[poppins] text-[#5e5e5e] font-light text-[13px] text-center leading-8 md:text-start xl:text-base"
+					class="font-[poppins] text-[#5e5e5e] font-light text-sm text-center leading-8 md:text-start xl:text-base"
 				>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 					officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
@@ -55,7 +55,7 @@
 			</div>
 		</div>
 		<div
-			class="h-[930px] bg-[url(../images/rest6-mozarella.jpg)] bg-no-repeat bg-cover bg-center md:w-[34.375%] md:h-[320px] md:mt-25"
+			class="h-225 bg-[url(../images/rest6-mozarella.jpg)] bg-no-repeat bg-cover bg-center md:w-[34.375%] md:h-80 md:mt-25"
 			style="padding-bottom: 37.5%"
 		></div>
 	</div>

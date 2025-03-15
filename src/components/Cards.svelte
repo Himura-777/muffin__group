@@ -20,18 +20,15 @@
 	];
 </script>
 
-<section
-	id="AboutUs"
-	class="mt-[120px] w-[634px] mx-auto md:w-[708px] lg:w-[900px] xl:w-[1080px]"
->
+<section id="AboutUs" class="mt-30 w-159 mx-auto md:w-177 lg:w-225 xl:w-270">
 	<h2
-		class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:font-[48px]"
+		class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:text-5xl"
 	>
 		We know how to make
 		<br />
 		the best Italian food in the city.
 	</h2>
-	<ul class="mt-[35px] flex flex-col gap-[15px] md:flex-row md:gap-[40px]">
+	<ul class="mt-9 flex flex-col gap-4 md:flex-row md:gap-10">
 		{#each items as { background, icon, title }}
 			<ItemsCards {background} {icon} {title} />
 		{/each}
