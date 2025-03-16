@@ -1,18 +1,22 @@
 <script>
 	import MobileNavigation from "./MobileNavigation.svelte";
 	import Navigation from "./Navigation.svelte";
+	import SliderInroduction from "./SliderIntroduction.svelte";
 </script>
 
-<section
-	id="Welcome"
-	class="relative w-full h-154 bg-[url(../images/rest6-slider-slide22.jpg)] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed"
->
-	<MobileNavigation />
-	<Navigation />
-
-	<span
-		class="relative text-center text-white font-[cormorant_garamond] font-thin leading-16 text-5xl tracking-widest"
+<section id="welcome">
+	<div
+		class="relative w-full h-154 bg-[url(../images/rest6-slider-slide22.jpg)] flex items-center justify-center bg-cover bg-center bg-no-repeat bg-fixed"
 	>
-		FROM<br />TUSCANY
-	</span>
+		<MobileNavigation />
+		<Navigation />
+
+		<span
+			class="relative text-center text-white font-[cormorant_garamond] font-thin leading-16 text-5xl tracking-widest"
+		>
+			FROM<br />TUSCANY
+		</span>
+	</div>
+
+	<SliderInroduction />
 </section>

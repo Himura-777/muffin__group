@@ -9,7 +9,7 @@
 	];
 </script>
 
-<div id="Contacts" class="mx-auto w-[84.02%] max-w-[1120px]">
+<div id="contact" class="mx-auto w-[84.02%] max-w-[1120px]">
 	<div>
 		<h2
 			class="font-[cormorant_garamond] text-white text-6xl font-normal text-center"
@@ -90,7 +90,7 @@
 			></textarea>
 			<button
 				type="submit"
-				class="w-[96.8%] h-10 py-3 px-5 bg-[#8b6f5c] text-white text-sm text-[poppins] mx-3"
+				class="w-[96.8%] h-10 py-3 px-5 bg-[#8b6f5c] text-white text-base font-light text-[poppins] mx-3 flex items-center justify-center"
 				>Send a message</button
 			>
 		</form>

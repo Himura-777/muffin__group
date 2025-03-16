@@ -5,14 +5,42 @@
 	let isMenuOpen = false;
 	let scrollPosition = 0;
 	let showFixedMenu = false;
+	let activeSection = "WELCOME";
+
+	const sections = ["WELCOME", "ABOUT US", "STORY", "CONTACT"];
 
 	const handleScroll = () => {
 		scrollPosition = window.scrollY;
 		showFixedMenu = scrollPosition > 60;
 	};
 
+	const observeSections = () => {
+		const options = {
+			root: null,
+			rootMargin: "-60% 0px -60% 0px",
+			threshold: 0,
+		};
+
+		const observer = new IntersectionObserver(entries => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+					activeSection = entry.target.id.toUpperCase();
+				}
+			});
+		}, options);
+
+		sections.forEach(id => {
+			const section = document.getElementById(
+				id.toLowerCase().replace(/\s+/g, "-")
+			);
+			if (section) observer.observe(section);
+		});
+	};
+
 	onMount(() => {
 		window.addEventListener("scroll", handleScroll);
+		observeSections();
+
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
 		};
@@ -20,12 +48,11 @@
 </script>
 
 <nav class="xl:hidden">
-	<!-- Первое меню -->
 	{#if !showFixedMenu}
 		<div
 			class="absolute top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-[#2d2b2a] z-20 transition-opacity duration-500 md:bg-transparent md:h-30"
 		>
-			<a href="#0" class="absolute left-1/2 transform -translate-x-1/2">
+			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
 				<img src="./images/restaurant6_logo.png" alt="" />
 			</a>
 			<button
@@ -53,10 +80,15 @@
 				class="absolute w-full right-0 top-15 text-center bg-[#2d2b2a] overflow-hidden md:w-80 md:top-30 md:right-[7%] transition-all duration-500 ease-in-out"
 				style="max-height: {isMenuOpen ? '200px' : '0'};"
 			>
-				{#each ["WELCOME", "ABOUT US", "STORY", "CONTACT"] as item}
-					<li class="h-11 flex justify-center items-center">
-						<a href="#0" class="text-sm text-white font-[cormorant_garamond]"
-							>{item}</a
+				{#each sections as item}
+					<li
+						class="h-11 flex justify-center items-center {activeSection === item
+							? 'active'
+							: ''}"
+					>
+						<a
+							href="#{item.toLowerCase()}"
+							class="text-sm text-white font-[cormorant_garamond]">{item}</a
 						>
 					</li>
 				{/each}
@@ -64,13 +96,12 @@
 		</div>
 	{/if}
 
-	<!-- Второе меню (фиксированное) -->
 	{#if showFixedMenu}
 		<div
 			class="fixed top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-[#2d2b2a] z-20 transition-opacity duration-500"
 			transition:fly={{ y: -500, duration: 500 }}
 		>
-			<a href="#0" class="absolute left-1/2 transform -translate-x-1/2">
+			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
 				<img src="./images/restaurant6_logo.png" alt="" />
 			</a>
 			<button
@@ -98,10 +129,15 @@
 				class="absolute w-full right-0 top-15 text-center bg-[#2d2b2a] overflow-hidden md:w-80 md:top-15 md:right-[7%] transition-all duration-500 ease-in-out"
 				style="max-height: {isMenuOpen ? '200px' : '0'};"
 			>
-				{#each ["WELCOME", "ABOUT US", "STORY", "CONTACT"] as item}
-					<li class="h-11 flex justify-center items-center">
-						<a href="#0" class="text-sm text-white font-[cormorant_garamond]"
-							>{item}</a
+				{#each sections as item}
+					<li
+						class="h-11 flex justify-center items-center {activeSection === item
+							? 'active'
+							: ''}"
+					>
+						<a
+							href="#{item.toLowerCase()}"
+							class="text-sm text-white font-[cormorant_garamond]">{item}</a
 						>
 					</li>
 				{/each}
@@ -109,3 +145,9 @@
 		</div>
 	{/if}
 </nav>
+
+<style>
+	.active {
+		background-color: #292827;
+	}
+</style>

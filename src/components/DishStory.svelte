@@ -1,4 +1,4 @@
-<section id="Story" class="mt-23">
+<section id="story" class="mt-8 pt-15">
 	<div
 		class="h-238 flex justify-center items-center bg-[url(../images/rest6-toscania.jpg)] bg-no-repeat bg-cover bg-center xl:bg-fixed"
 	>

@@ -1,5 +1,6 @@
 <script>
 	import ItemsCards from "./ItemsCards.svelte";
+	import Beginning from "./Beginning.svelte";
 
 	const items = [
 		{
@@ -20,17 +21,21 @@
 	];
 </script>
 
-<section id="AboutUs" class="mt-30 w-159 mx-auto md:w-177 lg:w-225 xl:w-270">
-	<h2
-		class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:text-5xl"
-	>
-		We know how to make
-		<br />
-		the best Italian food in the city.
-	</h2>
-	<ul class="mt-9 flex flex-col gap-4 md:flex-row md:gap-10">
-		{#each items as { background, icon, title }}
-			<ItemsCards {background} {icon} {title} />
-		{/each}
-	</ul>
+<section id="about-us" class="pt-30">
+	<div class="w-159 mx-auto md:w-177 lg:w-225 xl:w-270">
+		<h2
+			class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:text-5xl"
+		>
+			We know how to make
+			<br />
+			the best Italian food in the city.
+		</h2>
+		<ul class="mt-9 flex flex-col gap-4 md:flex-row md:gap-10">
+			{#each items as { background, icon, title }}
+				<ItemsCards {background} {icon} {title} />
+			{/each}
+		</ul>
+	</div>
+
+	<Beginning />
 </section>

@@ -8,6 +8,9 @@
 		href="#0"
 		class="group w-full h-full flex justify-center items-center transition-colors duration-300 {bgColor}"
 	>
-		<img src={icon} class="transition-all duration-300 group-hover:invert" />
+		<img
+			src={icon}
+			class="color-transpaprent transition-all duration-300 group-hover:invert"
+		/>
 	</a>
 </li>
