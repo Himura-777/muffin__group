@@ -1,6 +1,6 @@
 <script>
 	import ItemsCards from "./ItemsCards.svelte";
-	import Beginning from "./Beginning.svelte";
+	import Beginning from "./Jumbotron.svelte";
 
 	const items = [
 		{

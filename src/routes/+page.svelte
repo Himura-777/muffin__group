@@ -1,9 +1,7 @@
 <script>
-	import MobileNavigation from "../components/MobileNavigation.svelte";
-	import Navigation from "../components/Navigation.svelte";
 	import Header from "../components/Header.svelte";
-	import Cards from "../components/Cards.svelte";
-	import DishStory from "../components/DishStory.svelte";
+	import Cards from "../components/CardsSection.svelte";
+	import DishStory from "../components/HeroBanner.svelte";
 	import Footer from "../components/Footer.svelte";
 </script>
 

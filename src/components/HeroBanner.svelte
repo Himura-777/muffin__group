@@ -18,7 +18,7 @@
 			<h2
 				class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold leading-12 md:text-start md:mb-10 xl:text-5xl"
 			>
-				Tuscany's tradition<br />on your plat
+				Tuscany's tradition<br />on your plate
 			</h2>
 			<div
 				class="mt-4 flex flex-col gap-y-4 mx-auto w-[84.02%] md:mx-0 xl:w-fit"
