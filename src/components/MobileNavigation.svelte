@@ -47,7 +47,7 @@
 	});
 </script>
 
-<nav class="xl:hidden">
+<nav class="xl:hidden w-full">
 	{#if !showFixedMenu}
 		<div
 			class="absolute top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-[#2d2b2a] z-20 transition-opacity duration-500 md:bg-transparent md:h-30"

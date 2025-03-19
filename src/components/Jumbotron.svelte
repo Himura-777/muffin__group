@@ -1,4 +1,4 @@
-<section class="mt-30 mb-20 md:flex md:items-end md:gap-x-[9.12%]">
+<section class="mt-30 md:mb-20 md:flex md:items-end md:gap-x-[9.12%]">
 	<div class="mx-[9.01%] md:w-[45%] md:pl-[18%] md:mx-0">
 		<h2
 			class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold leading-12 md:text-start md:mr-[10%] xl:text-5xl xl:mb-10"
@@ -14,7 +14,6 @@
 		</p>
 	</div>
 	<div
-		class="mt-15 mr-1 h-60 bg-[url(./images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right md:w-[46.2%] md:bg-bottom md:mt-0"
-		style="padding-bottom: 17%"
+		class="mt-10 mr-1 ml-12 pb-[17%] h-50 md:h-60 bg-[url(./images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right-top md:w-[46.2%] md:bg-bottom md:mt-0"
 	></div>
 </section>

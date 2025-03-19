@@ -6,16 +6,19 @@
 	let hovered = false;
 </script>
 
-<li class="flex flex-col gap-y-4 w-full md:w-[33%]">
+<li
+	class="flex flex-col gap-y-4 md:w-[33%] aspect-[3/4]"
+	style="padding-bottom: 10%;"
+>
 	<div
-		class="h-118 md:h-54 xl:h-64 relative bg-no-repeat bg-cover transition-all duration-500 overflow-hidden"
+		class="h-full md:h-54 xl:h-64 relative bg-no-repeat bg-cover transition-all duration-500 overflow-hidden"
 		style="background-image: url({background});
 		background-position: {hovered ? 'right center' : 'center'};"
 		on:mouseenter={() => (hovered = true)}
 		on:mouseleave={() => (hovered = false)}
 	>
 		<div
-			class="absolute left-0 top-0 w-[14.2%] md:w-[30%] h-full bg-[#8b6f5c] bg-no-repeat bg-center transition-transform duration-500"
+			class="absolute left-0 top-0 w-25 md:w-[30%] h-full bg-[#8b6f5c] bg-no-repeat bg-center transition-transform duration-500"
 			style="background-image: url({icon}); 
 			       transform: translateX({hovered ? '-100%' : '0'});"
 		></div>

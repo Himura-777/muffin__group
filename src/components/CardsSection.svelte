@@ -22,7 +22,7 @@
 </script>
 
 <section id="about-us" class="pt-30">
-	<div class="w-159 mx-auto md:w-177 lg:w-225 xl:w-270">
+	<div class="w-full mx-auto px-10 md:w-177 lg:w-225 xl:w-270">
 		<h2
 			class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:text-5xl"
 		>

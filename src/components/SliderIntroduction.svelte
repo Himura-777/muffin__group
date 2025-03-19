@@ -1,9 +1,10 @@
 <script>
-	import { onMount } from "svelte";
+	import { onMount, onDestroy } from "svelte";
 
 	let currentSlide = 0;
 	let firstBlock;
 	let secondBlock;
+	let resizeObserver;
 
 	let slides = [
 		{
@@ -29,13 +30,27 @@
 		clearInterval(interval);
 	}
 
-	startAutoSlide();
+	function updateHeight() {
+		if (firstBlock && secondBlock) {
+			secondBlock.style.height = `${firstBlock.offsetHeight}px`;
+		}
+	}
 
 	onMount(() => {
-		if (firstBlock && secondBlock) {
-			const height = firstBlock.offsetHeight;
-			secondBlock.style.height = `${height}px`;
+		startAutoSlide();
+		updateHeight();
+
+		resizeObserver = new ResizeObserver(updateHeight);
+		resizeObserver.observe(firstBlock);
+
+		setTimeout(updateHeight, 100);
+	});
+
+	onDestroy(() => {
+		if (resizeObserver) {
+			resizeObserver.disconnect();
 		}
+		stopAutoSlide();
 	});
 </script>
 
@@ -64,6 +79,7 @@
 			class="inline md:pl-3"
 		/>
 	</div>
+
 	<div
 		bind:this={secondBlock}
 		class="relative w-full overflow-hidden md:w-1/2 md:h-full"
