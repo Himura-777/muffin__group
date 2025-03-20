@@ -9,7 +9,7 @@
 	];
 </script>
 
-<div id="contact" class="mx-auto w-[84.02%] max-w-[1120px]">
+<div id="contact" class="mx-auto px-6 max-w-[1120px]">
 	<div>
 		<h2
 			class="font-cormorant_garamond text-white text-center text-42 sm:text-53 md:text-6xl lg:text-7xl leading-10.75 sm:leading-13.5 md:leading-15.25 lg:leading-18"
@@ -30,7 +30,7 @@
 				Opening hours
 			</h6>
 			<p
-				class="mt-8 font-poppins text-white font-thin text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
+				class="mt-8 font-poppins text-white font-extralight text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8 md:w-[80%]"
 			>
 				Mauris neque. Pelentesque dolor. Mauris in est. Vivamus lacus sed
 			</p>
@@ -68,16 +68,16 @@
 				placeholder="Name"
 				class="block w-[95%] text-white text-poppins text-thin text-15 border-b border-solid border-white/70 p-3 mx-3 mb-3 placeholder:text-white/70 placeholder:text-15 placeholder:text-poppins focus:border-white focus:placeholder:text-white focus:outline-none"
 			/>
-			<div class="md:flex md:gap-x-2">
+			<div class="md:flex md:gap-x-1 md:justify-between md:w-[98.5%]">
 				<input
 					type="email"
 					placeholder="Email"
-					class="block w-[95%] text-white text-poppins text-thin text-15 border-b border-solid border-white/70 p-3 mx-3 mb-3 placeholder:text-white/70 placeholder:text-15 placeholder:text-poppins focus:border-white focus:placeholder:text-white focus:outline-none"
+					class="block w-[95%] md:w-1/2 text-white text-poppins text-thin text-15 border-b border-solid border-white/70 p-3 mx-3 mb-3 placeholder:text-white/70 placeholder:text-15 placeholder:text-poppins focus:border-white focus:placeholder:text-white focus:outline-none"
 				/>
 				<input
 					type="text"
 					placeholder="Subject"
-					class="block w-[95%] text-white text-poppins text-thin text-15 border-b border-solid border-white/70 p-3 mx-3 mb-3 placeholder:text-white/70 placeholder:text-15 placeholder:text-poppins focus:border-white focus:placeholder:text-white focus:outline-none"
+					class="block w-[95%] md:w-1/2 text-white text-poppins text-thin text-15 border-b border-solid border-white/70 p-3 mx-3 mb-3 placeholder:text-white/70 placeholder:text-15 placeholder:text-poppins focus:border-white focus:placeholder:text-white focus:outline-none"
 				/>
 			</div>
 

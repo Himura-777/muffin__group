@@ -20,11 +20,9 @@
 			>
 				Tuscany's tradition<br />on your plate
 			</h2>
-			<div
-				class="mt-4 flex flex-col gap-y-4 mx-auto w-[84.02%] md:mx-0 xl:w-fit"
-			>
+			<div class="mt-4 flex flex-col gap-y-4 mx-auto w-[90%] md:mx-0 xl:w-fit">
 				<p
-					class="font-poppins text-lightgrey font-thin text-center md:text-start text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
+					class="font-poppins text-lightgrey font-extralight text-center md:text-start text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
 				>
 					<span class="font-bold"
 						>Praesent nec magna ac pede. Mauris suscipit mauris.</span

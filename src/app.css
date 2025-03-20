@@ -39,11 +39,11 @@
 	/* 80px */
 	--text-7xl: 4.375rem;
 
-	/* --tracking-1: 0.0625em;
-	--tracking-19: 1.1875em;
-	--tracking-31: 1.9375em;
-	--tracking-39: 2.4375em;
-	--tracking-50: 3.125rem; */
+	--tracking-1: 0.0625rem;
+	--tracking-19: 1.1875rem;
+	--tracking-31: 1.9375rem;
+	--tracking-39: 2.4375rem;
+	--tracking-50: 3.125rem;
 
 	--color-darkgrey: rgb(45, 43, 42);
 	--color-lightgrey: rgb(94, 94, 94);

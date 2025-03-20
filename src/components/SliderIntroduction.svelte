@@ -57,15 +57,15 @@
 <section class="md:flex h-fit">
 	<div
 		bind:this={firstBlock}
-		class="h-fit bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover px-6 py-30 flex flex-col items-center justify-center gap-y-5 md:w-1/2 md:-mt-15 z-1 md:items-start"
+		class="h-fit bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover px-6 md:pl-[9%] py-30 flex flex-col items-center justify-center gap-y-5 md:w-1/2 md:-mt-15 z-1 md:items-start"
 	>
 		<h2
-			class="font-cormorant_garamond text-center text-white font-semibold md:text-start md:pl-3 md:pr-15 text-29 sm:text-4xl md:text-41 lg:text-5xl leading-8.75 sm:leading-11 md:leading-12.25 lg:leading-14.5"
+			class="font-cormorant_garamond text-center text-white font-semibold md:w-[80%] md:text-start md:pl-3 md:pr-15 text-29 sm:text-4xl md:text-41 lg:text-5xl leading-8.75 sm:leading-11 md:leading-12.25 lg:leading-14.5"
 		>
 			True & memorable taste made with love and tradition
 		</h2>
 		<p
-			class="font-poppins text-center text-white font-light md:text-start md:pl-3 md:pr-15 text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
+			class="font-poppins text-center text-white font-extralight md:w-[80%] md:text-start md:pl-3 md:pr-15 text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
 		>
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore e t enim ad minim veniam, quis nostrud
