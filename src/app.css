@@ -1,1 +1,54 @@
 @import "tailwindcss";
+
+@theme {
+	/* 480px */
+	--breakpoint-sm: 30rem;
+	/* 768px */
+	--breakpoint-md: 48rem;
+	/* 960px */
+	--breakpoint-lg: 60rem;
+	/*1240p*/
+	--breakpoint-xl: 77.5rem;
+
+	/* 13px */
+	--text-xs: 0.8125rem;
+	--text-sm: 0.875rem;
+	--text-15: 0.9375rem;
+	--text-base: 1rem;
+	--text-lg: 1.125rem;
+	--text-xl: 1.25rem;
+	--text-22: 1.375rem;
+	--text-23: 1.4375rem;
+	--text-26: 1.625rem;
+	--text-28: 1.75rem;
+	--text-29: 1.8125rem;
+	--text-3xl: 1.875rem;
+	--text-31: 1.9375rem;
+	--text-32: 2rem;
+	--text-4xl: 2.25rem;
+	--text-39: 2.4375rem;
+	--text-41: 2.5625rem;
+	--text-42: 2.625rem;
+	--text-5xl: 3rem;
+	--text-50: 3.125rem;
+	--text-53: 3.3125rem;
+	--text-6xl: 3.75rem;
+	--text-62: 3.875rem;
+	/* 70px */
+	--text-7xl: 4.375rem;
+	/* 80px */
+	--text-7xl: 4.375rem;
+
+	/* --tracking-1: 0.0625em;
+	--tracking-19: 1.1875em;
+	--tracking-31: 1.9375em;
+	--tracking-39: 2.4375em;
+	--tracking-50: 3.125rem; */
+
+	--color-darkgrey: rgb(45, 43, 42);
+	--color-lightgrey: rgb(94, 94, 94);
+	--color-brown: rgb(139, 111, 92);
+
+	--font-cormorant_garamond: Cormorant Garamond, serif;
+	--font-poppins: Poppins, sans-serif;
+}

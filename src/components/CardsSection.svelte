@@ -22,9 +22,9 @@
 </script>
 
 <section id="about-us" class="pt-30">
-	<div class="w-full mx-auto px-10 md:w-177 lg:w-225 xl:w-270">
+	<div class="w-full mx-auto px-8 md:w-177 lg:w-225 xl:w-270">
 		<h2
-			class="font-[cormorant_garamond] text-center text-black text-4xl font-semibold md:text-start lg:text-5xl"
+			class="font-cormorant_garamond text-center text-black font-medium md:text-start md:mr-[10%] xl:mb-10 text-29 sm:text-4xl md:text-41 lg:text-5xl leading-8.75 sm:leading-11 md:leading-12.25 lg:leading-14.5"
 		>
 			We know how to make
 			<br />

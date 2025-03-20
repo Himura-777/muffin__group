@@ -50,7 +50,7 @@
 <nav class="xl:hidden w-full">
 	{#if !showFixedMenu}
 		<div
-			class="absolute top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-[#2d2b2a] z-20 transition-opacity duration-500 md:bg-transparent md:h-30"
+			class="absolute top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-darkgrey z-20 transition-opacity duration-500 md:bg-transparent md:h-30"
 		>
 			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
 				<img src="./images/restaurant6_logo.png" alt="" />
@@ -77,18 +77,19 @@
 			</button>
 
 			<ul
-				class="absolute w-full right-0 top-15 text-center bg-[#2d2b2a] overflow-hidden md:w-80 md:top-30 md:right-[7%] transition-all duration-500 ease-in-out"
+				class="absolute w-full right-0 top-15 text-center bg-darkgrey overflow-hidden md:w-80 md:top-30 md:right-[7%] transition-all duration-500 ease-in-out"
 				style="max-height: {isMenuOpen ? '200px' : '0'};"
 			>
 				{#each sections as item}
 					<li
-						class="h-11 flex justify-center items-center {activeSection === item
+						class="flex justify-center items-center {activeSection === item
 							? 'active'
 							: ''}"
 					>
 						<a
 							href="#{item.toLowerCase()}"
-							class="text-sm text-white font-[cormorant_garamond]">{item}</a
+							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
+							>{item}</a
 						>
 					</li>
 				{/each}
@@ -98,7 +99,7 @@
 
 	{#if showFixedMenu}
 		<div
-			class="fixed top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-[#2d2b2a] z-20 transition-opacity duration-500"
+			class="fixed top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-darkgrey z-20 transition-opacity duration-500"
 			transition:fly={{ y: -500, duration: 500 }}
 		>
 			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
@@ -126,18 +127,19 @@
 			</button>
 
 			<ul
-				class="absolute w-full right-0 top-15 text-center bg-[#2d2b2a] overflow-hidden md:w-80 md:top-15 md:right-[7%] transition-all duration-500 ease-in-out"
+				class="absolute w-full right-0 top-15 text-center bg-darkgrey overflow-hidden md:w-80 md:top-15 md:right-[7%] transition-all duration-500 ease-in-out"
 				style="max-height: {isMenuOpen ? '200px' : '0'};"
 			>
 				{#each sections as item}
 					<li
-						class="h-11 flex justify-center items-center {activeSection === item
+						class="flex justify-center items-center {activeSection === item
 							? 'active'
 							: ''}"
 					>
 						<a
 							href="#{item.toLowerCase()}"
-							class="text-sm text-white font-[cormorant_garamond]">{item}</a
+							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
+							>{item}</a
 						>
 					</li>
 				{/each}

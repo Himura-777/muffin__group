@@ -75,7 +75,7 @@
 				>
 					<a
 						href="#{item.toLowerCase()}"
-						class="text-base text-white font-[cormorant_garamond]"
+						class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 					>
 						{item}
 					</a>
@@ -97,7 +97,7 @@
 				>
 					<a
 						href="#{item.toLowerCase()}"
-						class="text-base text-white font-[cormorant_garamond]"
+						class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 					>
 						{item}
 					</a>
@@ -108,7 +108,7 @@
 
 	{#if showFixedMenu}
 		<div
-			class="fixed top-0 left-0 w-full flex items-center bg-[#2d2b2a]/90 z-20 transition-all duration-300"
+			class="fixed top-0 left-0 w-full flex items-center bg-darkgrey/90 z-20 transition-all duration-300"
 			transition:fly={{ y: -500, duration: 500 }}
 		>
 			<ul
@@ -123,7 +123,7 @@
 					>
 						<a
 							href="#{item.toLowerCase()}"
-							class="text-base text-white font-[cormorant_garamond]"
+							class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 						>
 							{item}
 						</a>
@@ -145,7 +145,7 @@
 					>
 						<a
 							href="#{item.toLowerCase()}"
-							class="text-base text-white font-[cormorant_garamond]"
+							class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 						>
 							{item}
 						</a>

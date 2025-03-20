@@ -15,7 +15,7 @@
 </main>
 
 <footer
-	class="bg-[url(../images/rest6-bottom-sec-gra.jpg)] bg-no-repeat bg-cover bg-[top_center] py-[124px] pt-15"
+	class="bg-[url(../images/rest6-bottom-sec-gra.jpg)] bg-no-repeat bg-cover bg-[top_center] py-[124px] pt-30"
 >
 	<Footer />
 </footer>
