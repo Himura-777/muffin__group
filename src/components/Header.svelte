@@ -1,12 +1,12 @@
 <script>
 	import MobileNavigation from "./MobileNavigation.svelte";
 	import Navigation from "./Navigation.svelte";
-	import SliderInroduction from "./SliderIntroduction.svelte";
+	import SliderIntroduction from "./SliderIntroduction.svelte";
 </script>
 
 <section id="welcome">
 	<div
-		class="w-full bg-[url(../images/rest6-slider-slide22.jpg)] flex flex-col justify-center bg-cover bg-no-repeat bg-fixed bg-bottom aspect-[4/3.5] md:aspect-[4/2.9] max-h-225"
+		class="w-full bg-[url(/images/rest6-slider-slide22.jpg)] flex flex-col justify-center bg-cover bg-no-repeat bg-fixed bg-bottom aspect-[4/3.5] md:aspect-[4/2.9] max-h-225"
 	>
 		<MobileNavigation />
 		<Navigation />
@@ -18,5 +18,5 @@
 		</span>
 	</div>
 
-	<SliderInroduction />
+	<SliderIntroduction />
 </section>

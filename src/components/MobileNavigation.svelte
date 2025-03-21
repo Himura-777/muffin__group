@@ -14,6 +14,7 @@
 		showFixedMenu = scrollPosition > 60;
 	};
 
+	const transformToId = text => text.toLowerCase().replace(/\s+/g, "-");
 	const observeSections = () => {
 		const options = {
 			root: null,
@@ -30,9 +31,7 @@
 		}, options);
 
 		sections.forEach(id => {
-			const section = document.getElementById(
-				id.toLowerCase().replace(/\s+/g, "-")
-			);
+			const section = document.getElementById(transformToId(id));
 			if (section) observer.observe(section);
 		});
 	};
@@ -53,7 +52,7 @@
 			class="absolute top-0 left-0 w-full h-15 px-3 flex items-center justify-end bg-darkgrey z-20 transition-opacity duration-500 md:bg-transparent md:h-30"
 		>
 			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
-				<img src="./images/restaurant6_logo.png" alt="" />
+				<img src="/images/restaurant6_logo.png" alt="" />
 			</a>
 			<button
 				aria-label="Menu"
@@ -87,7 +86,7 @@
 							: ''}"
 					>
 						<a
-							href="#{item.toLowerCase()}"
+							href="#{transformToId(item)}"
 							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
 							>{item}</a
 						>
@@ -103,7 +102,7 @@
 			transition:fly={{ y: -500, duration: 500 }}
 		>
 			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
-				<img src="./images/restaurant6_logo.png" alt="" />
+				<img src="/images/restaurant6_logo.png" alt="" />
 			</a>
 			<button
 				aria-label="Menu"
@@ -137,7 +136,7 @@
 							: ''}"
 					>
 						<a
-							href="#{item.toLowerCase()}"
+							href="#{transformToId(item)}"
 							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
 							>{item}</a
 						>

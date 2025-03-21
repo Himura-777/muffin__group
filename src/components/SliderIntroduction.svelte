@@ -8,11 +8,11 @@
 
 	let slides = [
 		{
-			image: "../images/rest6-slider-slide111.jpg",
-			overlayImage: "./images/rest6-fork.png",
+			image: "/images/rest6-slider-slide111.jpg",
+			overlayImage: "/images/rest6-fork.png",
 		},
-		{ image: "../images/rest6-slider-slide22.jpg" },
-		{ image: "../images/rest6-slider-slide32.jpg" },
+		{ image: "/images/rest6-slider-slide22.jpg" },
+		{ image: "/images/rest6-slider-slide32.jpg" },
 	];
 
 	let interval;
@@ -57,7 +57,7 @@
 <section class="md:flex h-fit">
 	<div
 		bind:this={firstBlock}
-		class="h-fit bg-[url(../images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover px-6 md:pl-[9%] py-30 flex flex-col items-center justify-center gap-y-5 md:w-1/2 md:-mt-15 z-1 md:items-start"
+		class="h-fit bg-[url(/images/rest6-gradient.png)] bg-center bg-no-repeat bg-cover px-6 md:pl-[9%] py-30 flex flex-col items-center justify-center gap-y-5 md:w-1/2 md:-mt-15 z-1 md:items-start"
 	>
 		<h2
 			class="font-cormorant_garamond text-center text-white font-semibold md:w-[80%] md:text-start md:pl-3 md:pr-15 text-29 sm:text-4xl md:text-41 lg:text-5xl leading-8.75 sm:leading-11 md:leading-12.25 lg:leading-14.5"

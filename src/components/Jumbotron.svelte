@@ -14,6 +14,6 @@
 		</p>
 	</div>
 	<div
-		class="mt-15 md:mr-1 ml-10 pb-[17%] h-50 md:h-60 bg-[url(./images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right-top md:w-[46.2%] md:bg-bottom md:mt-0"
+		class="mt-15 md:mr-1 ml-10 pb-[17%] h-50 md:h-60 bg-[url(/images/rest6-home-forkk.png)] bg-no-repeat bg-contain bg-right-top md:w-[46.2%] md:bg-bottom md:mt-0"
 	></div>
 </section>

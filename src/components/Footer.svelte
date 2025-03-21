@@ -2,10 +2,10 @@
 	import Contacts from "./Contacts.svelte";
 
 	const items = [
-		{ icon: "../svg/FaceBook.svg", bgColor: "hover:bg-[#3b5998]" },
-		{ icon: "../svg/Instagram.svg", bgColor: "hover:bg-[#E1306C]" },
-		{ icon: "../svg/Twitter.svg", bgColor: "hover:bg-[#00acee]" },
-		{ icon: "../svg/Vimeo.svg", bgColor: "hover:bg-[#1ab7ea]" },
+		{ icon: "/svg/FaceBook.svg", bgColor: "hover:bg-[#3b5998]" },
+		{ icon: "/svg/Instagram.svg", bgColor: "hover:bg-[#E1306C]" },
+		{ icon: "/svg/Twitter.svg", bgColor: "hover:bg-[#00acee]" },
+		{ icon: "/svg/Vimeo.svg", bgColor: "hover:bg-[#1ab7ea]" },
 	];
 </script>
 

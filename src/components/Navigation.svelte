@@ -25,6 +25,8 @@
 		}
 	};
 
+	const transformToId = text => text.toLowerCase().replace(/\s+/g, "-");
+
 	const observeSections = () => {
 		const options = {
 			root: null,
@@ -41,9 +43,7 @@
 		}, options);
 
 		sections.forEach(id => {
-			const section = document.getElementById(
-				id.toLowerCase().replace(/\s+/g, "-")
-			);
+			const section = document.getElementById(transformToId(id));
 			if (section) observer.observe(section);
 		});
 	};
@@ -74,7 +74,7 @@
 						: ''}"
 				>
 					<a
-						href="#{item.toLowerCase()}"
+						href="#{transformToId(item)}"
 						class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 					>
 						{item}
@@ -83,7 +83,7 @@
 			{/each}
 		</ul>
 		<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
-			<img src="../images/restaurant6_logo.png" alt="" />
+			<img src="/images/restaurant6_logo.png" alt="" />
 		</a>
 		<ul
 			class="h-full w-full flex items-center justify-center gap-x-10 text-center"
@@ -96,7 +96,7 @@
 						: ''}"
 				>
 					<a
-						href="#{item.toLowerCase()}"
+						href="#{transformToId(item)}"
 						class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 					>
 						{item}
@@ -122,7 +122,7 @@
 							: ''}"
 					>
 						<a
-							href="#{item.toLowerCase()}"
+							href="#{transformToId(item)}"
 							class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 						>
 							{item}
@@ -131,7 +131,7 @@
 				{/each}
 			</ul>
 			<a href="#" class="absolute left-1/2 transform -translate-x-1/2">
-				<img src="../images/restaurant6_logo.png" alt="" />
+				<img src="/images/restaurant6_logo.png" alt="" />
 			</a>
 			<ul
 				class="h-15 w-full flex items-center justify-center gap-x-10 text-center"
@@ -144,7 +144,7 @@
 							: ''}"
 					>
 						<a
-							href="#{item.toLowerCase()}"
+							href="#{transformToId(item)}"
 							class="text-base text-white font-cormorant_garamond leading-15 tracking-1"
 						>
 							{item}

@@ -1,6 +1,6 @@
 <section id="story" class="mt-8 pt-15">
 	<div
-		class="h-238 flex justify-center items-center bg-[url(../images/rest6-toscania.jpg)] bg-no-repeat bg-cover bg-center xl:bg-fixed"
+		class="h-238 flex justify-center items-center bg-[url(/images/rest6-toscania.jpg)] bg-no-repeat bg-cover bg-center xl:bg-fixed"
 	>
 		<h2
 			class="font-cormorant_garamond text-center text-white font-thin xl:mb-10 text-28 sm:text-29 md:text-31 lg:text-39 xl:text-50 md:text-5xl lg:text-3xl xl:text-5xl leading-7 sm:leading-7.25 md:leading-7.75 lg:leading-9.75 xl:leading-12.5"
@@ -11,7 +11,7 @@
 	</div>
 	<div class="md:flex md:gap-x-[5.6%]">
 		<div
-			class="w-full bg-[url(../images/rest6-spices.jpg)] bg-no-repeat bg-cover bg-center z-1 md:w-[20%] md:h-59 md:-mt-25 aspect-[3/4.6]"
+			class="w-full bg-[url(/images/rest6-spices.jpg)] bg-no-repeat bg-cover bg-center z-1 md:w-[20%] md:h-59 md:-mt-25 aspect-[3/4.6]"
 			style="padding-bottom: 29.2%"
 		></div>
 		<div class="mt-25 mb-24 md:w-[34.375%] md:pr-[1.6%]">
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		<div
-			class="bg-[url(../images/rest6-mozarella.jpg)] bg-no-repeat bg-cover bg-center md:w-[34.375%] md:h-80 md:mt-25 aspect-[3/3.7]"
+			class="bg-[url(/images/rest6-mozarella.jpg)] bg-no-repeat bg-cover bg-center md:w-[34.375%] md:h-80 md:mt-25 aspect-[3/3.7]"
 			style="padding-bottom: 37.5%"
 		></div>
 	</div>
