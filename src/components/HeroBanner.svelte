@@ -35,7 +35,7 @@
 					velit esse cillum dolore eu fugiat nulla pariatur.
 				</p>
 				<p
-					class="font-poppins text-lightgrey font-thin text-center md:text-start text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
+					class="font-poppins text-lightgrey font-extralight text-center md:text-start text-xs md:text-sm lg:text-base leading-4.75 sm:leading-6 md:leading-6.75 lg:leading-8"
 				>
 					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
 					officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde

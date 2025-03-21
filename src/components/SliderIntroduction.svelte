@@ -91,7 +91,7 @@
 					background-image: url({slide.image});
 					opacity: {i === currentSlide ? 1 : 0};
 					z-index: {i === currentSlide ? 2 : 1};
-					background-size: {i === currentSlide ? '110% 110%' : '100% 100%'};
+					transform: scale({i === currentSlide ? 1.1 : 1});
 					transition: opacity 2s ease-in-out, background-size 6s ease-in-out;
 				"
 			>
