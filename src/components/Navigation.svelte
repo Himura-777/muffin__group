@@ -38,6 +38,7 @@
 			entries.forEach(entry => {
 				if (entry.isIntersecting) {
 					activeSection = entry.target.id.toUpperCase();
+					history.replaceState(null, null, `#${entry.target.id}`);
 				}
 			});
 		}, options);

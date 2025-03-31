@@ -40,8 +40,20 @@
 		window.addEventListener("scroll", handleScroll);
 		observeSections();
 
+		const closeMenuOnClickOutside = (event) => {
+			const menu = document.querySelector("ul");
+			const button = document.querySelector("button[aria-label='Menu']");
+
+			if (isMenuOpen && menu && !menu.contains(event.target) && !button.contains(event.target)) {
+				isMenuOpen = false;
+			}
+		};
+
+		document.addEventListener("click", closeMenuOnClickOutside);
+
 		return () => {
 			window.removeEventListener("scroll", handleScroll);
+			document.removeEventListener("click", closeMenuOnClickOutside);
 		};
 	});
 </script>
@@ -81,13 +93,13 @@
 			>
 				{#each sections as item}
 					<li
-						class="flex justify-center items-center {activeSection === transformToId(item).toUpperCase()
+						class="flex justify-center items-center w-full {activeSection === transformToId(item).toUpperCase()
 							? 'active'
 							: ''}"
 					>
 						<a
 							href="#{transformToId(item)}"
-							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
+							class="text-xs md:text-sm lg:text-base w-full text-white font-cormorant_garamond leading-11 tracking-1"
 							>{item}</a
 						>
 					</li>
@@ -131,13 +143,13 @@
 			>
 				{#each sections as item}
 					<li
-						class="flex justify-center items-center {activeSection === transformToId(item).toUpperCase()
+						class="flex justify-center items-center w-full {activeSection === transformToId(item).toUpperCase()
 							? 'active'
 							: ''}"
 					>
 						<a
 							href="#{transformToId(item)}"
-							class="text-xs md:text-sm lg:text-base text-white font-cormorant_garamond leading-11 tracking-1"
+							class="text-xs md:text-sm lg:text-base w-full text-white font-cormorant_garamond leading-11 tracking-1"
 							>{item}</a
 						>
 					</li>
