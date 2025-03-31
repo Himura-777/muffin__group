@@ -81,7 +81,7 @@
 			>
 				{#each sections as item}
 					<li
-						class="flex justify-center items-center {activeSection === item
+						class="flex justify-center items-center {activeSection === transformToId(item).toUpperCase()
 							? 'active'
 							: ''}"
 					>
@@ -131,7 +131,7 @@
 			>
 				{#each sections as item}
 					<li
-						class="flex justify-center items-center {activeSection === item
+						class="flex justify-center items-center {activeSection === transformToId(item).toUpperCase()
 							? 'active'
 							: ''}"
 					>

@@ -1,6 +1,6 @@
 <script>
-	import { onMount } from "svelte";
-	import { fly } from "svelte/transition";
+	import {onMount} from 'svelte'
+	import {fly} from 'svelte/transition'
 
 	let scrollPosition = 0;
 	let showFixedMenu = false;
@@ -68,8 +68,7 @@
 		>
 			{#each ["WELCOME", "ABOUT US"] as item}
 				<li
-					class="h-10 flex justify-center items-center px-2 {activeSection ===
-					item
+					class="h-10 flex justify-center items-center px-2 {activeSection === transformToId(item).toUpperCase()
 						? 'activeMain'
 						: ''}"
 				>
@@ -90,8 +89,7 @@
 		>
 			{#each ["STORY", "CONTACT"] as item}
 				<li
-					class="h-10 flex justify-center items-center px-2 {activeSection ===
-					item
+					class="h-10 flex justify-center items-center px-2 {activeSection === transformToId(item).toUpperCase()
 						? 'activeMain'
 						: ''}"
 				>
@@ -116,8 +114,7 @@
 			>
 				{#each ["WELCOME", "ABOUT US"] as item}
 					<li
-						class="h-full flex justify-center items-center px-2 {activeSection ===
-						item
+						class="h-full flex justify-center items-center px-2 {activeSection === transformToId(item).toUpperCase()
 							? 'activeFixed'
 							: ''}"
 					>
@@ -138,8 +135,7 @@
 			>
 				{#each ["STORY", "CONTACT"] as item}
 					<li
-						class="h-full flex justify-center items-center px-2 {activeSection ===
-						item
+						class="h-full flex justify-center items-center px-2 {activeSection === transformToId(item).toUpperCase()
 							? 'activeFixed'
 							: ''}"
 					>
@@ -157,11 +153,7 @@
 </nav>
 
 <style>
-	.activeMain {
+	.activeMain, .activeFixed {
 		border-bottom: 1px solid white;
-	}
-
-	.activeFixed {
-		border-bottom: 3px solid white;
 	}
 </style>
